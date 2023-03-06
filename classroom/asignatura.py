@@ -5,7 +5,5 @@ class Asignatura:
         self._salon = salon
 
     def __str__(self):
-        if self._salon is None:
-            return self._nombre
-        else:
+        if self._salon is "remoto":
             return f"{self._nombre} {self._salon}"
